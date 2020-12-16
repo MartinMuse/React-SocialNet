@@ -1,0 +1,47 @@
+.wideColumn{
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.myPostsBlock{
+
+}
+
+
+.infoBlock{
+  background: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 5px;
+
+}
+.myPosts{
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.postForm{
+  border-radius: 6px;
+  margin-top: 10px;
+  background: white;
+  display: flex;
+}
+
+.postInput{
+  outline: none;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 6px;
+  border-style: none;
+  flex-grow: 7;
+}
+
+.submitBtn{
+  outline: none;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  border-style: none;
+  border-left-style: solid;
+  border-left-width: 1px;
+  background: none;
+  flex-grow: 1;
+}

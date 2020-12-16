@@ -1,0 +1,15 @@
+
+.wrapper {
+  background: rgba(126,126,153,0.25);
+  min-height: 1000px;
+  width: 100%;
+  background-size: 100%
+}
+
+.body-container{
+  display: flex;
+}
+.wrapper-content{
+  margin: 10px auto 0 0;
+  min-width: 750px;
+}

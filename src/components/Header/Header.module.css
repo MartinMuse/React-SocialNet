@@ -1,0 +1,18 @@
+.header {
+  grid-area: h;
+  background: white;
+  display: flex;
+  justify-content: center;
+
+}
+.logo{
+  display: flex;
+}
+.logoImage img{
+  width: 60px;
+}
+
+.logoTitle{
+  font-size: 32px;
+
+}

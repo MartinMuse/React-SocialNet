@@ -1,0 +1,25 @@
+.item {
+  background: white;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  padding: 5px 0 10px 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+}
+
+.like {
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin: 5px 5px 0 5px;
+  padding-top: 5px;
+  border-top-color: rgba(90, 90, 111, 0.25);
+}
+
+.likeImg {
+  width: 20px;
+  padding-right: 5px;
+}
+
+.profileImg {
+  width: 50px;
+  border-radius: 30px;
+}

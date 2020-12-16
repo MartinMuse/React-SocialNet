@@ -1,0 +1,13 @@
+.profile-content{
+  display: flex;
+}
+.narrowColumn{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.wideColumn{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
