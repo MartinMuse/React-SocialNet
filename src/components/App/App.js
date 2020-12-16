@@ -4,12 +4,11 @@ import Navbar from "../Navbar/Navbar";
 import Profile from "../Profile/Profile";
 import styles from './App.module.css'
 import Dialogs from "../Dialogs/Dialogs";
-import News from "../News/News";
 import {Route} from 'react-router-dom';
 import Settings from "../Settings/Settings";
+import UsersPage from "../UsersPage/UsersPage";
 
 function App(props) {
-  console.log(props)
   return (
       <div className={styles.wrapper}>
         <Header/>
@@ -18,7 +17,7 @@ function App(props) {
           <div className={styles['wrapper-content']}>
             <Route path={'/profile'} render={() => <Profile/>}/>
             <Route path={'/dialogs'} render={() => <Dialogs/>}/>
-            <Route path={'/news'} render={() => <News/>}/>
+            <Route path={'/users'} render={() => <UsersPage/>}/>
             <Route path={'/settings'} render={() => <Settings/>}/>
           </div>
         </div>

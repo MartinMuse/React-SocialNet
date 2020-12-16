@@ -22,9 +22,14 @@ const Navbar = () => {
       </div>
     </NavLink>
 
-    {/*<div className={styles.item}>*/}
-    {/*  <NavLink activeClassName={styles.active} to={'/news'}>News</NavLink>*/}
-    {/*</div>*/}
+    <NavLink activeClassName={styles.active} className={styles.item} to={'/users'}>
+      <div className={styles.itemImage}>
+        <img src={'https://www.pngfind.com/pngs/m/100-1004248_png-file-svg-add-friends-icon-png-transparent.png'}/>
+      </div>
+      <div className={styles.itemTitle}>
+        Users
+      </div>
+    </NavLink>
     {/*<div className={styles.item}>*/}
     {/*  <NavLink activeClassName={styles.active} to={'/settings'}>Settings</NavLink>*/}
     {/*</div>*/}

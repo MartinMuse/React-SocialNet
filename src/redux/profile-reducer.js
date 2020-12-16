@@ -9,7 +9,7 @@ let initialStore = {
   }],
   newText: '',
 }
-export const ProfileReducer = (state = initialStore, action) => {
+const ProfileReducer = (state = initialStore, action) => {
   let newState={
     ...state,
     posts: [...state.posts],

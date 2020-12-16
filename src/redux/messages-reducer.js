@@ -5,7 +5,7 @@ let initialState = {
   messages: [],
   newMessageText: '',
 }
-export const MessagesReducer = (state = initialState, action) => {
+const MessagesReducer = (state = initialState, action) => {
   let newState = {
     ...state,
     newMessageText: [...state.newMessageText],
