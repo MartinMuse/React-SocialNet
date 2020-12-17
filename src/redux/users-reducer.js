@@ -4,10 +4,6 @@ const USERS = 'UsersPage';
 
 let initialState = {
   users: [
-    {id: 1, userName: 'Bob', location: 'Minsk', follow: false},
-    {id: 2, userName: 'Max', location: 'Minsk', follow: false},
-    {id: 3, userName: 'Sam', location: 'Minsk', follow: false},
-    {id: 4, userName: 'Alex', location: 'Minsk', follow: false},
   ]
 }
 
@@ -18,7 +14,7 @@ const UsersReducer = (state = initialState, action) => {
         ...state,
         users: state.users.map(u => {
           if (u.id === action.userId){
-            return {...u, follow: true}
+            return {...u, followed: true}
           }
           return u
         })
@@ -28,12 +24,14 @@ const UsersReducer = (state = initialState, action) => {
         ...state,
         users: state.users.map(u => {
           if (u.id === action.userId)
-            return {...u, follow: false}
+            return {...u, followed: false}
           return u
         })
       }
     case USERS:
-      return {...state,users:[...state.users,...action.users]}
+      return {...state,
+        // users:[...state.users,...action.users]}
+        users:[...action.users]}
     default:
       return state
   }
