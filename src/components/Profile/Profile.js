@@ -7,11 +7,11 @@ const Profile = (props) => {
   return <div className={styles['profile-content']}>
 
     <div className={styles.narrowColumn}>
-      <ProfileNarrowColumn/>
+      <ProfileNarrowColumn {...props}/>
     </div>
 
     <div className={styles.wideColumn}>
-      <ProfileWideColumn/>
+      <ProfileWideColumn {...props}/>
     </div>
   </div>
 }

@@ -1,10 +1,13 @@
 const FOLLOW = 'Follow';
 const UNFOLLOW = 'Unfollow';
 const USERS = 'UsersPage';
+const PAGE = 'Page';
 
 let initialState = {
-  users: [
-  ]
+  users: [],
+  pageSize: 10,
+  totalUsersCount: 0,
+  currentPage: 1,
 }
 
 const UsersReducer = (state = initialState, action) => {
@@ -13,7 +16,7 @@ const UsersReducer = (state = initialState, action) => {
       return {
         ...state,
         users: state.users.map(u => {
-          if (u.id === action.userId){
+          if (u.id === action.userId) {
             return {...u, followed: true}
           }
           return u
@@ -29,9 +32,16 @@ const UsersReducer = (state = initialState, action) => {
         })
       }
     case USERS:
-      return {...state,
+      return {
+        ...state,
         // users:[...state.users,...action.users]}
-        users:[...action.users]}
+        users: [...action.users]
+      }
+    case PAGE:
+      return {
+        ...state,
+        currentPage: action.page
+      }
     default:
       return state
   }
@@ -40,5 +50,6 @@ const UsersReducer = (state = initialState, action) => {
 export const followAC = (userId) => ({type: FOLLOW, userId})
 export const unfollowAC = (userId) => ({type: UNFOLLOW, userId})
 export const setUsersAC = (users) => ({type: USERS, users})
+export const setCurrentPageAC = (page) => ({type: PAGE, page})
 
 export default UsersReducer;

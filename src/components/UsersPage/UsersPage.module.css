@@ -1,4 +1,24 @@
 .userContainer{
   display: flex;
   flex-direction: column;
+  width: 65%;
+}
+.currentPage{
+  font-weight: bold;
+  margin:0 2px;
+  color: dodgerblue;
+  font-size: 23px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.pagesBlock{
+  margin: auto;
+  background: white;
+  border-radius: 6px;
+  padding: 3px;
+}
+.regularPage{
+  margin:0 2px;
+  color: dodgerblue;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }

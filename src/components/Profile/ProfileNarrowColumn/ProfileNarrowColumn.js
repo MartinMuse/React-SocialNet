@@ -1,10 +1,14 @@
 import React from 'react'
 import styles from './ProfileNarrowColumn.module.css'
+import userImage from '../../../images/userImg.jpg'
+import {NavLink} from "react-router-dom";
 
-const ProfileNarrowColumn = () => {
+const ProfileNarrowColumn = (props) => {
   return <div className={styles.profileInfo}>
     <div className={styles.image}>
-      <img src={'https://image.freepik.com/free-vector/man-avatar-profile-round-icon_24640-14044.jpg'} alt={'image'}/>
+      {props.profilePage.profile.photos.large === null ?
+          <img src={userImage}/> :
+          <img src={props.profilePage.profile.photos.large}/>}
     </div>
     <div className={styles.infoBlock}>
       <div>Followers:</div>

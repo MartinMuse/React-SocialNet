@@ -23,8 +23,8 @@ const ProfileWideColumn = (props) => {
   return (
       <div className={styles.wideColumn}>
         <div className={styles.infoBlock}>
-          <h3>User name</h3>
-          <div>Status</div>
+          <h3>{props.profilePage.profile.name}</h3>
+          <div>Status: {props.profilePage.profile.status}</div>
           <div>Information</div>
         </div>
         <div className={styles.myPostsBlock}>
@@ -42,22 +42,4 @@ const ProfileWideColumn = (props) => {
         </div>
       </div>)
 }
-
-const mapStateToProps = (state) => {
-  return {profilePage: state.profilePage}
-}
-
-  const mapDispatchToProps = (dispatch) => {
-    return {
-      onChange: (value) => {
-        dispatch(updateBufferTextActionCreator(value))
-      },
-      onSubmit: (value) => {
-        if (value !== '') {
-          dispatch(addPostActionCreator());
-          dispatch(updateBufferTextActionCreator(''))
-        }
-      }
-    }
-  }
-export default connect(mapStateToProps, mapDispatchToProps)(ProfileWideColumn)
+export default ProfileWideColumn

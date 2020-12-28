@@ -1,12 +1,12 @@
 import Header from "../Header/Header";
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import Profile from "../Profile/Profile";
+import ProfileContainer from "../Profile/ProfileContainer";
 import styles from './App.module.css'
 import Dialogs from "../Dialogs/Dialogs";
-import {Route} from 'react-router-dom';
+import {Route} from 'react-router';
 import Settings from "../Settings/Settings";
-import UsersPage from "../UsersPage/UsersPage";
+import UsersPage from "../UsersPage/UsersPageContainer";
 
 function App(props) {
   return (
@@ -15,7 +15,7 @@ function App(props) {
         <div className={styles['body-container']}>
           <Navbar/>
           <div className={styles['wrapper-content']}>
-            <Route path={'/profile'} render={() => <Profile/>}/>
+            <Route path={'/profile/:userId?'} render={() => <ProfileContainer/>}/>
             <Route path={'/dialogs'} render={() => <Dialogs/>}/>
             <Route path={'/users'} render={() => <UsersPage/>}/>
             <Route path={'/settings'} render={() => <Settings/>}/>

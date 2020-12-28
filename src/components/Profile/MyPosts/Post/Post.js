@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from "./Post.module.css";
+import userImage from "../../../../images/userImg.jpg"
 
 const Post = (props) => {
   return <div className={styles.item}>
 
-    <img src={'https://image.freepik.com/free-vector/man-avatar-profile-round-icon_24640-14044.jpg'} className={styles.profileImg} alt={'image'}/>
+    <img src={userImage} className={styles.profileImg} alt={'image'}/>
     {props.title}
 
     <div className={styles.like}>
